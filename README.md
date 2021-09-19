@@ -18,9 +18,9 @@ Brief overview of what is available:
   * _FX - Key response_: velocity processor gain and ratio for light touch, leftmost position for natural response.
   * _FX - High_: channel equalizer high frequency control.
 
-![Smart Controls](/Screenshots/Zone Editor.png)
+![Smart Controls](/Screenshots/Zone%20Editor.png)
 
-No conversion tool was used to create this instrument, it was all made from sctratch manually note by note. Start and end of each sample was audited multiple times, volume was manually modified for the best possible experience and few problems and artifacts fixed.
+No conversion tool was used to create this instrument, it was all made from sctratch manually note by note. Start and end of each sample was audited multiple times, volume was manually modified for the best possible experience and few problems fixed. This was all done in my free time, I am not a professional sound designer.
 
 All patches were created in Logic Pro X 10.6 and may not be compatible with older version of either Logic Pro, or Logic Sampler (EXS24 in older versions).
 
