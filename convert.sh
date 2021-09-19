@@ -6,9 +6,10 @@ if ! test -f "$SOURCE"; then
   echo "Put the '$SOURCE' file next to this script!"
   exit 1
 fi
-# TODO check brew
-#$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)
-#brew install p7zip flac
+if ! command -v brew &> /dev/null
+  $(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)
+fi
+brew install p7zip flac
 echo "*** EXTRACTING"
 if test "$1" = "test"; then
   7za x "$SOURCE" -aos '-i!Ivy Audio - Piano in 162 sfz/Piano in 162 Samples/Ambient/PedalOffAmbient/01*'
@@ -25,3 +26,5 @@ find "$SAMPLES" -name \*.flac -exec rm {} \;
 echo "*** MOVING FILES"
 mv -f "$SAMPLES/Close" "$TARGET"
 mv -f "$SAMPLES/Ambient" "$TARGET"
+echo "*** DONE"
+echo "Move samples from this folder to the Logic Pro samplers folder"

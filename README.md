@@ -2,14 +2,18 @@
 
 This repository contains Logic Sampler (also known as EXS24) instrument patch for the excellent [Piano in 162](https://ivyaudio.com/Piano-in-162) sample library. There are also several channel strip patches available with smart controls for microphone mix and quick access to key effects like compressor or key response.
 
-![Smart Controls](/Screenshots/Smart Controls.png)
+![Smart Controls](/Screenshots/Smart%20Controls.png)
 
 Brief overview of what is available:
 
 * multiple output Logic Sampler instrument patch in two mic configurations (close, ambient)
+* filter cutoff modulated by velocity to flatten out sharpness of the tone
 * 5 channel strip patches with Smart Controls (click for an MP3 preview):
-  * [Piano 162 Init](/Previews/Piano 162 Init.mp3)
-  * [Piano 162 Init](/Previews/Piano 162 Init.mp3)
+  * [Piano 162 Init](/Previews/Piano%20162%20Init.mp3): both close and ambient mics, no compression, natural velocity.
+  * [Piano 162 Init Loud](/Previews/Piano%20162%20Init%20Loud.mp3): both close and ambient mics, some compression, light velocity.
+  * [Piano 162 Close](/Previews/Piano%20162%20Close.mp3): more close than ambient mix, no compression, natural velocity.
+  * [Piano 162 Ambient](/Previews/Piano%20162%20Ambient.mp3): more ambient than close mix, no compression, natural velocity.
+  * [Piano 162 Pop](/Previews/Piano%20162%20Pop.mp3): mostly close mic mix, ton of compression, lighter velocity.
 * Smart Controls for all strip patches:
   * _Microphones - Close_: volume of the close microphones.
   * _Microphones - Ambient_: volume of the ambient microphones.
@@ -70,9 +74,33 @@ I created a script that will install [MacOS Homebrew](https://brew.sh) if it is 
 1. The extraction and conversion takes some time, have a break.
 1. Move folders `Close` and `Ambient` from `PianoIn162Logic/Audio Music Apps/Samples/Piano 162` into your home folder under `Audio Music Apps/Samples/Piano 162`. Do not copy, these folders are huge (use Shift key and drag to move).
 
-If you run into problems with the script, create [a discussion](https://github.com/lzap/Piano162Logic/discussions) topic and include your MacOS version, make a screenshot or copy and paste the error from the terminal.
+## Limitations or issues
 
-## Credits
+Logic Sampler is limited to polyphony of 99 voices and since each note triggers two samples (both close and ambient mics), the total polyphony is 50 effectively. This could be workarounded by creating separate Sampler instances but I wanted to keep things simple and also it makes no sense to try to compete with professional sample libraries or even physical modelling or hybrid instruments. They will always sound better with much greater polyphony.
 
-* Simon Dalzell - Piano in 162 sample content
-* Lukáš Zapletal - Logic Pro instrument and patches
+One ambient pianissimo sample was incorrectly recorded (there is a silence essentially) and although I could use its round-robin counterpart, again, I wanted to keep things simple. Therefore a pitched neighbor is used as a replacement.
+
+Although I did my best to level out velocities for each individual sample as well as for groups, there is still apparent sample change between layers. Therefore I used velocity x-fade across 3 MIDI levels which smooths the transition a bit.
+
+There is a bit of noise, apparently in the ambient samples. I added a bit of fade-out for each sample to smooth it out.
+
+## Background
+
+You maybe wonder why I created a Logic Sampler instrument while Piano in 162 is available for Kontakt and also via free and open SFZ instrument format. Well, after Apple introduced their first M1 models of laptops and Macs, there were no SFZ instrument plugins in native format. Although Rosetta is working fine, I wanted the best possible performance.
+
+Another reason was to try out the new Logic Sampler because workflow was vastly improved. And I have to say it is a wonderful experience and in my experience, it is the best sampler I have ever worked with. I also own Reason with its, ehm, NN19 and NN-XT, tried EXS24, Renoise and few others. Logic Sampler has a ton of capabilities, it recognizes root notes from filenames or, which was particularly useful for this instrument, keeps filename ordering when samples are dragged into the map screen. Also sample audition via arrow keys was fast, snap to transition/0dB as well as fade-in, fade-out and group operations on zones and groups was very useful.
+
+So there you have it, enjoy this piano.
+
+## Thanks
+
+Huge thanks to Simon Dalzell for the sample library.
+
+## Feedback or problems
+
+I am looking for any kind of feedback or contributions, just create [a discussion](https://github.com/lzap/Piano162Logic/discussions) topic. When reporting problems, include your MacOS version, make a screenshot or copy and paste the error from the terminal.
+
+## Tips and credits
+
+* Simon Dalzell - Piano in 162 sample content: [tips or donations](https://sites.fastspring.com/ivyaudio/instant/piano-in-162)
+* Lukáš Zapletal - Logic Pro instrument and patches: tips (use the Sponsor button above)
