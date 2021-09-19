@@ -1,6 +1,6 @@
 # Piano in 162 for Logic Sampler
 
-This repository contains Logic Sampler (also known as EXS24) instrument patch for the excellent [Piano in 162](https://ivyaudio.com/Piano-in-162) sample library. There are also several channel strip patches available with smart controls for microphone mix and quick access to key effects like compressor or key response.
+This repository contains Logic Sampler (also known as EXS24) instrument patch for the excellent [Piano in 162](https://ivyaudio.com/Piano-in-162) sample library (14 GB). There are also several channel strip patches available with smart controls for microphone mix and quick access to key effects like compressor or key response.
 
 ![Smart Controls](/Screenshots/Smart%20Controls.png)
 
@@ -34,7 +34,7 @@ Piano in 162 is a sample library of a Steinway Model B grand piano for Native In
 
 The grand piano was sampled in high quality (96kHz) with two mic configurations (close and ambient) without and with sustain pedal for sympathetic resonance. Each of the 88 keys has five velocity levels (pp, p, mp, mf, f), every sample is present twice for round-robin and sample files are well organized with good names.
 
-The download size is 4.7 GB and all 3520 samples are distributed in FLAC format, an efficient loseless compression. Logic Sampler does not support FLAC encoding, therefore all samples must be converted to WAV in order to be able to load the instrument. Make sure you have at least 19 GB of free space.
+The download size is 4.7 GB and all 3520 samples are distributed in FLAC format, an efficient loseless compression. Logic Sampler does not support FLAC encoding, therefore all samples must be converted to WAV in order to be able to load the instrument. Make sure you have at least 19 GB of free space before you start.
 
 ## Instructions
 
@@ -77,6 +77,8 @@ I created a script that will install [MacOS Homebrew](https://brew.sh) if it is 
 ## Limitations or issues
 
 Logic Sampler is limited to polyphony of 99 voices and since each note triggers two samples (both close and ambient mics), the total polyphony is 50 effectively. This could be workarounded by creating separate Sampler instances but I wanted to keep things simple and also it makes no sense to try to compete with professional sample libraries or even physical modelling or hybrid instruments. They will always sound better with much greater polyphony.
+
+The sample content library comes with round-robins for each individual sample and Logic Sampler is capable of round-robin sampling. However, for practical reasons I ended up using just samples named with "1". Double the samples, double the work on getting a good sound from them.
 
 One ambient pianissimo sample was incorrectly recorded (there is a silence essentially) and although I could use its round-robin counterpart, again, I wanted to keep things simple. Therefore a pitched neighbor is used as a replacement.
 
