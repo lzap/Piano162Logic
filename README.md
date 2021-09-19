@@ -2,14 +2,14 @@
 
 This repository contains Logic Sampler (also known as EXS24) instrument patch for the excellent [Piano in 162](https://ivyaudio.com/Piano-in-162) sample library. There are also several channel strip patches available with smart controls for microphone mix and quick access to key effects like compressor or key response.
 
-![Smart Controls](Screenshots/Smart Controls.png)
+![Smart Controls](/Screenshots/Smart Controls.png)
 
 Brief overview of what is available:
 
 * multiple output Logic Sampler instrument patch in two mic configurations (close, ambient)
 * 5 channel strip patches with Smart Controls (click for an MP3 preview):
-  * [Piano 162 Init](Previews/Piano 162 Init.mp3)
-  * [Piano 162 Init](Previews/Piano 162 Init.mp3)
+  * [Piano 162 Init](/Previews/Piano 162 Init.mp3)
+  * [Piano 162 Init](/Previews/Piano 162 Init.mp3)
 * Smart Controls for all strip patches:
   * _Microphones - Close_: volume of the close microphones.
   * _Microphones - Ambient_: volume of the ambient microphones.
@@ -18,7 +18,7 @@ Brief overview of what is available:
   * _FX - Key response_: velocity processor gain and ratio for light touch, leftmost position for natural response.
   * _FX - High_: channel equalizer high frequency control.
 
-![Smart Controls](Screenshots/Zone Editor.png)
+![Smart Controls](/Screenshots/Zone Editor.png)
 
 No conversion tool was used to create this instrument, it was all made from sctratch manually note by note. Start and end of each sample was audited multiple times, volume was manually modified for the best possible experience and few problems and artifacts fixed.
 
@@ -58,7 +58,7 @@ Now, I understand that not everyone is able to fiddle around with sample convers
 
 Feel free to flatten the directory structure if needed, Logic Pro will find samples regardless of their paths. Just do not rename samples, they MUST have the very same names except the extension (WAV instead of FLAC). Also keep case sensitivity.
 
-### B1) Download and setup samples (script)
+### B2) Download and setup samples (script)
 
 I created a script that will install [MacOS Homebrew](https://brew.sh) if it is not already installed. Then it will install [p7zip](https://formulae.brew.sh/formula/p7zip) and [flac](https://formulae.brew.sh/formula/flac) command line utilities. And finally it will use the utilities to extract, convert and drop unwanted samples. This is how to use it:
 
