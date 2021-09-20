@@ -6,13 +6,15 @@ if ! test -f "$SOURCE"; then
   echo "Put the '$SOURCE' file next to this script!"
   exit 1
 fi
-if ! command -v brew &> /dev/null
-  $(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)
+if ! command -v brew &> /dev/null; then
+  echo "*** INSTALLING HOMEBREW"
+  #$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)
 fi
 brew install p7zip flac
 echo "*** EXTRACTING"
 if test "$1" = "test"; then
   7za x "$SOURCE" -aos '-i!Ivy Audio - Piano in 162 sfz/Piano in 162 Samples/Ambient/PedalOffAmbient/01*'
+  7za x "$SOURCE" -aos '-i!Ivy Audio - Piano in 162 sfz/Piano in 162 Samples/Close/PedalOffClose/01*'
 else
   7za x "$SOURCE"
 fi
