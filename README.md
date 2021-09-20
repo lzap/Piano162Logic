@@ -62,7 +62,7 @@ The download size is 4.7 GB and all 3520 samples are distributed in FLAC format,
 
 ### A) Download and setup patches
 
-1. Download [Piano162Logic.zip](https://github.com/lzap/Piano162Logic/archive/refs/tags/PianoIn162Logic_v1.zip).
+1. Download [Piano162Logic.zip](https://github.com/lzap/Piano162Logic/archive/refs/tags/v1.zip).
 1. Extract the archive.
 1. Copy all three folders from `Audio Music Apps` into your home directory in `Audio Music Apps`.
    1. Folder `Audio Music Apps/Sampler Instruments/Piano 162` contains Logic Sampler patch.
