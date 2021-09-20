@@ -31,7 +31,7 @@ Brief overview of what is available:
   * _FX - High_: channel equalizer high frequency control.
 
 <p align="center">
-  <a href="Screenshots/"Editor%20Detail.png"><img src="Screenshots/Editor%20Detail.png" width="400" /></a>
+  <a href="Screenshots/Editor%20Detail.png"><img src="Screenshots/Editor%20Detail.png" width="400" /></a>
 </p>
 
 When loading Logic Sampler patch directly, make sure to open up "Sampler (multi-out)" and not just "Sampler (stereo)". This is a two channel instrument:
@@ -59,6 +59,8 @@ The grand piano was sampled in high quality (96kHz) with two mic configurations 
 The download size is 4.7 GB and all 3520 samples are distributed in FLAC format, an efficient loseless compression. Logic Sampler does not support FLAC encoding, therefore all samples must be converted to WAV in order to be able to load the instrument. Make sure you have at least 19 GB of free space before you start.
 
 ## Instructions
+
+<iframe width="560" height="315" src="https://www.youtube.com/watch?v=wcmjie-tocw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ### A) Download and setup patches
 
