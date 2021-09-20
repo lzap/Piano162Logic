@@ -1,6 +1,6 @@
 # Piano in 162 for Logic Sampler
 
-Welcome on the Piano in 162 patches for Logic Pro X: https://lukas.zapletalovi.com/Piano162Logic/
+Welcome on the Piano in 162 patches for Logic Pro X: [lukas.zapletalovi.com/Piano162Logic](https://lukas.zapletalovi.com/Piano162Logic/)
 
 <p align="center">
   <a href="Screenshots/Smart%20Controls.png"><img src="Screenshots/Smart%20Controls.png" width="400" /></a>
@@ -31,7 +31,7 @@ Brief overview of what is available:
   * _FX - High_: channel equalizer high frequency control.
 
 <p align="center">
-  <a href="Screenshots/"Editor%20Detail.png><img src="Screenshots/Editor%20Detail.png" width="400" /></a>
+  <a href="Screenshots/"Editor%20Detail.png"><img src="Screenshots/Editor%20Detail.png" width="400" /></a>
 </p>
 
 When loading Logic Sampler patch directly, make sure to open up "Sampler (multi-out)" and not just "Sampler (stereo)". This is a two channel instrument:
@@ -62,12 +62,12 @@ The download size is 4.7 GB and all 3520 samples are distributed in FLAC format,
 
 ### A) Download and setup patches
 
-1. Download [Piano162Logic.zip](https://github.com/lzap/Piano162Logic).
+1. Download [Piano162Logic.zip](https://github.com/lzap/Piano162Logic/archive/refs/tags/PianoIn162Logic_v1.zip).
 1. Extract the archive.
 1. Copy all three folders from `Audio Music Apps` into your home directory in `Audio Music Apps`.
-  1. Folder `Audio Music Apps/Sampler Instruments/Piano 162` contains Logic Sampler patch.
-  1. Folder `Audio Music Apps/Channel Strip Settings/Instrument` contains chanel strip patches.
-  1. Folder `Audio Music Apps/Samples/Piano 162` is empty: this is where sample content must be copied.
+   1. Folder `Audio Music Apps/Sampler Instruments/Piano 162` contains Logic Sampler patch.
+   1. Folder `Audio Music Apps/Channel Strip Settings/Instrument` contains chanel strip patches.
+   1. Folder `Audio Music Apps/Samples/Piano 162` is empty: this is where sample content must be copied.
 
 Now, I understand that not everyone is able to fiddle around with sample conversion, so I created a script that will do everything for you. If you are not comfortable with typing commands in MacOS Terminal, use (B2) option and figure out UNIX commands yourself. Otherwise, use (B1) option to use a script that will do everything for you.
 
