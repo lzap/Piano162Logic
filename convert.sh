@@ -8,7 +8,7 @@ if ! test -f "$SOURCE"; then
 fi
 if ! command -v brew &> /dev/null; then
   echo "*** INSTALLING HOMEBREW"
-  #$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)
+  $(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)
 fi
 brew install p7zip flac
 echo "*** EXTRACTING"

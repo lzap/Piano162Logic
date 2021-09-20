@@ -1,6 +1,6 @@
 # Piano in 162 for Logic Sampler
 
-Welcome on the Piano in 162 patches for Logic Pro X: [lukas.zapletalovi.com/Piano162Logic](https://lukas.zapletalovi.com/Piano162Logic/)
+Free *Piano in 162* instrument patches for Logic Pro X: [lukas.zapletalovi.com/Piano162Logic](https://lukas.zapletalovi.com/Piano162Logic/)
 
 <p align="center">
   <a href="Screenshots/Smart%20Controls.png"><img src="Screenshots/Smart%20Controls.png" width="400" /></a>
@@ -66,7 +66,7 @@ The download size is 4.7 GB and all 3520 samples are distributed in FLAC format,
 
 ### A) Download and setup patches
 
-1. Download [Piano162Logic.zip](https://github.com/lzap/Piano162Logic/archive/refs/tags/v1.zip).
+1. Download [Piano162Logic.zip](https://github.com/lzap/Piano162Logic/archive/refs/tags/v2.zip).
 1. Extract the archive.
 1. Copy all three folders from `Audio Music Apps` into your home directory in `Audio Music Apps`.
    1. Folder `Audio Music Apps/Sampler Instruments/Piano 162` contains Logic Sampler patch.
@@ -84,7 +84,7 @@ I created a script that will install [MacOS Homebrew](https://brew.sh) if it is 
 1. Open up MacOS terminal with Command-Space and typing "terminal" with Enter key.
 1. Navigate to the `PianoIn162Logic` folder extracted above: `cd ~/Downloads/Piano162Logic`
 1. Run the script: `bash convert.sh`
-1. The extraction and conversion takes some time, have a break.
+1. The extraction and conversion takes some time, have a break. FLAC files will be converted into `Audio Music Apps/Samples` subdirectory.
 1. Move folders `Close` and `Ambient` from `PianoIn162Logic/Audio Music Apps/Samples/Piano 162` into your home folder under `Audio Music Apps/Samples/Piano 162`. Do not copy, these folders are huge (use Shift key and drag to move).
 
 ### B2) Download and setup samples (manually)
@@ -131,6 +131,20 @@ Another reason was to try out the new Logic Sampler because I simply wanted to c
 
 So there you have it, enjoy this piano.
 
+## FAQ
+
+### Will it work in older versions of Logic Pro X?
+
+I have no idea, test it and report back.
+
+### Have you used a conversion utility for this?
+
+No, this was done manually in Logic Sampler.
+
+### Something is not right
+
+Identify the problem (key, velocity, mic channel) and either report back or make an adjustment and send the updated EXS patch back to me. Sharing is caring!
+
 ## Thanks
 
 Huge thanks to Simon Dalzell for the sample library.
@@ -141,11 +155,11 @@ I am looking for any kind of feedback or contributions, just create [a discussio
 
 ## License
 
-The patches for Logic Pro are public domain, feel free to do anything you want. If you do some decent improvements, send patches back over to me. Make sure to describe what you did so I can test it.
+Sample content copyright is owned by Simon Dalzell (Ivy Audio). Head over to the site for more information.
 
-Sample contant is copyrighted by Simon Dalzell (Ivy Audio). Head over to the site for more information.
+The patches for Logic Pro are public domain, feel free to do anything you want. If you do some decent improvements, send patches back over to me. Make sure to describe what you did so I can test it.
 
 ## Tips and credits
 
-* Simon Dalzell - Piano in 162 sample content: [tips or donations](https://sites.fastspring.com/ivyaudio/instant/piano-in-162)
-* Lukáš Zapletal - Logic Pro instrument and patches: tips (use the Sponsor button above)
+* Simon Dalzell - Piano in 162 sample content: [donations](https://sites.fastspring.com/ivyaudio/instant/piano-in-162)
+* Lukáš Zapletal - Logic Pro instrument and patches: [tips](https://github.com/sponsors/lzap)
