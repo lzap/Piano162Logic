@@ -73,7 +73,7 @@ The download size is 4.7 GB and all 3520 samples are distributed in FLAC format,
    1. Folder `Audio Music Apps/Channel Strip Settings/Instrument` contains chanel strip patches.
    1. Folder `Audio Music Apps/Samples/Piano 162` is empty: this is where sample content must be copied.
 
-Now, I understand that not everyone is able to fiddle around with sample conversion, so I created a script that will do everything for you. If you are not comfortable with typing commands in MacOS Terminal, use (B2) option and figure out UNIX commands yourself. Otherwise, use (B1) option to use a script that will do everything for you.
+Now, I understand that not everyone is able to fiddle around with sample conversion, so I created a script that will do everything for you. If you are comfortable with typing commands in MacOS Terminal, use (B2) option and use your own conversion utilities or figure out UNIX commands yourself. Otherwise, use (B1) option to use a script that will do everything for you.
 
 ### B1) Download and setup samples
 
