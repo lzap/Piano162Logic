@@ -60,7 +60,7 @@ The download size is 4.7 GB and all 3520 samples are distributed in FLAC format,
 
 ## Instructions
 
-<iframe width="560" height="315" src="https://www.youtube.com/watch?v=wcmjie-tocw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+[![Instructions video](http://img.youtube.com/vi/wcmjie-tocw/0.jpg)](http://www.youtube.com/watch?v=wcmjie-tocw "Instructions")
 
 ### A) Download and setup patches
 
