@@ -1,19 +1,21 @@
 # Piano in 162 for Logic Sampler
 
+![Smart Controls](Screenshots/Smart%20Controls.png)
+
 This repository contains Logic Sampler (also known as EXS24) instrument patch for the excellent [Piano in 162](https://ivyaudio.com/Piano-in-162) sample library (14 GB). There are also several channel strip patches available with smart controls for microphone mix and quick access to key effects like compressor or key response.
 
-![Smart Controls](/Screenshots/Smart%20Controls.png)
+![Smart Controls](Screenshots/Strip%20Settings.png)
 
 Brief overview of what is available:
 
-* multiple output Logic Sampler instrument patch in two mic configurations (close, ambient)
-* filter cutoff modulated by velocity to flatten out sharpness of the tone
-* 5 channel strip patches with Smart Controls (click for an MP3 preview):
-  * [Piano 162 Init](/Previews/Piano%20162%20Init.mp3): both close and ambient mics, no compression, natural velocity.
-  * [Piano 162 Init Loud](/Previews/Piano%20162%20Init%20Loud.mp3): both close and ambient mics, some compression, light velocity.
-  * [Piano 162 Close](/Previews/Piano%20162%20Close.mp3): more close than ambient mix, no compression, natural velocity.
-  * [Piano 162 Ambient](/Previews/Piano%20162%20Ambient.mp3): more ambient than close mix, no compression, natural velocity.
-  * [Piano 162 Pop](/Previews/Piano%20162%20Pop.mp3): mostly close mic mix, ton of compression, lighter velocity.
+* Logic Sampler instrument patch in two mic configurations (close, ambient) in multi-output setup.
+* Filter cutoff modulated by velocity to flatten out sharpness of the tone.
+* Channel strip patches with Smart Controls (click for an MP3 preview):
+  * [Piano 162 Init](Previews/Piano%20162%20Init.mp3): both close and ambient mics, no compression, natural velocity.
+  * [Piano 162 Init Loud](Previews/Piano%20162%20Init%20Loud.mp3): both close and ambient mics, some compression, light velocity.
+  * [Piano 162 Close](Previews/Piano%20162%20Close.mp3): more close than ambient mix, no compression, natural velocity.
+  * [Piano 162 Ambient](Previews/Piano%20162%20Ambient.mp3): more ambient than close mix, no compression, natural velocity.
+  * [Piano 162 Pop](Previews/Piano%20162%20Pop.mp3): mostly close mic mix, ton of compression, lighter velocity.
 * Smart Controls for all strip patches:
   * _Microphones - Close_: volume of the close microphones.
   * _Microphones - Ambient_: volume of the ambient microphones.
@@ -22,7 +24,17 @@ Brief overview of what is available:
   * _FX - Key response_: velocity processor gain and ratio for light touch, leftmost position for natural response.
   * _FX - High_: channel equalizer high frequency control.
 
-![Smart Controls](/Screenshots/Zone%20Editor.png)
+![Smart Controls](Screenshots/Editor%20Detail.png)
+
+When loading Logic Sampler patch directly, make sure to open up "Sampler (multi-out)" and not just "Sampler (stereo)". This is a two channel instrument:
+
+* Main (1-2): stereo output
+* Close (3-4): close microphones
+* Ambient (5-6): ambient microphones
+
+To work with both channels separately on the Logic mixer, click on the plus icon to expand channels 3-4 and 5-6. Normally, Smart Controls should do tho.
+
+![Smart Controls](Screenshots/Mixer%20Expanded.png)
 
 No conversion tool was used to create this instrument, it was all made from sctratch manually note by note. Start and end of each sample was audited multiple times, volume was manually modified for the best possible experience and few problems fixed. This was all done in my free time, I am not a professional sound designer.
 
@@ -46,11 +58,22 @@ The download size is 4.7 GB and all 3520 samples are distributed in FLAC format,
   1. Folder `Audio Music Apps/Sampler Instruments/Piano 162` contains Logic Sampler patch.
   1. Folder `Audio Music Apps/Channel Strip Settings/Instrument` contains chanel strip patches.
   1. Folder `Audio Music Apps/Samples/Piano 162` is empty: this is where sample content must be copied.
-1. You can now delete the `Piano162Logic.zip` archive and the rest of the extracted content.
 
-Now, I understand that not everyone is able to fiddle around with sample conversion, so I created a script that will do everything for you. If you are not comfortable with typing commands in MacOS Terminal, use (B1) option and figure out UNIX commands yourself. Otherwise, use (B2) option to use a script that will do everything for you.
+Now, I understand that not everyone is able to fiddle around with sample conversion, so I created a script that will do everything for you. If you are not comfortable with typing commands in MacOS Terminal, use (B2) option and figure out UNIX commands yourself. Otherwise, use (B1) option to use a script that will do everything for you.
 
-### B1) Download and setup samples (manually)
+### B1) Download and setup samples
+
+I created a script that will install [MacOS Homebrew](https://brew.sh) if it is not already installed. Then it will install [p7zip](https://formulae.brew.sh/formula/p7zip) and [flac](https://formulae.brew.sh/formula/flac) command line utilities. And finally it will use the utilities to extract, convert and drop unused samples. This is how to use it:
+
+1. Make sure to have at least 19 GB of free space.
+1. Move the `Ivy Audio - Piano in 162 sfz.zip`, which you downloaded from the "Piano in 162" webpage, into the `PianoIn162Logic` folder next to the `convert.sh` script.
+1. Open up MacOS terminal with Command-Space and typing "terminal" with Enter key.
+1. Navigate to the `PianoIn162Logic` folder extracted above: `cd ~/Downloads/Piano162Logic`
+1. Run the script: `bash convert.sh`
+1. The extraction and conversion takes some time, have a break.
+1. Move folders `Close` and `Ambient` from `PianoIn162Logic/Audio Music Apps/Samples/Piano 162` into your home folder under `Audio Music Apps/Samples/Piano 162`. Do not copy, these folders are huge (use Shift key and drag to move).
+
+### B2) Download and setup samples (manually)
 
 1. Download [Piano in 162 SFZ version](https://ivyaudio.com/Piano-in-162).
 1. Use The Unarchiver or 7-Zip (both available in Apple App Store or on the web) to extract the ZIP archive. MacOS (Big Sur) was unable to extract the archive because it uses more recent ZIP format and it will report a corruption.
@@ -62,23 +85,13 @@ Now, I understand that not everyone is able to fiddle around with sample convers
 
 Feel free to flatten the directory structure if needed, Logic Pro will find samples regardless of their paths. Just do not rename samples, they MUST have the very same names except the extension (WAV instead of FLAC). Also keep case sensitivity.
 
-### B2) Download and setup samples (script)
-
-I created a script that will install [MacOS Homebrew](https://brew.sh) if it is not already installed. Then it will install [p7zip](https://formulae.brew.sh/formula/p7zip) and [flac](https://formulae.brew.sh/formula/flac) command line utilities. And finally it will use the utilities to extract, convert and drop unwanted samples. This is how to use it:
-
-1. Make sure to have at least 19 GB of free space.
-1. Move the `Ivy Audio - Piano in 162 sfz.zip` into the `PianoIn162Logic` folder next to the `convert.sh` script.
-1. Open up MacOS terminal with Command-Space and typing "terminal" with Enter key.
-1. Navigate to the `PianoIn162Logic` folder extracted above: `cd ~/Downloads/Piano162Logic`
-1. Run the script: `bash convert.sh`
-1. The extraction and conversion takes some time, have a break.
-1. Move folders `Close` and `Ambient` from `PianoIn162Logic/Audio Music Apps/Samples/Piano 162` into your home folder under `Audio Music Apps/Samples/Piano 162`. Do not copy, these folders are huge (use Shift key and drag to move).
-
 ## Limitations or issues
 
 Logic Sampler is limited to polyphony of 99 voices and since each note triggers two samples (both close and ambient mics), the total polyphony is 50 effectively. This could be workarounded by creating separate Sampler instances but I wanted to keep things simple and also it makes no sense to try to compete with professional sample libraries or even physical modelling or hybrid instruments. They will always sound better with much greater polyphony.
 
 The sample content library comes with round-robins for each individual sample and Logic Sampler is capable of round-robin sampling. However, for practical reasons I ended up using just samples named with "1". Double the samples, double the work on getting a good sound from them.
+
+![Smart Controls](Screenshots/Zone%20Editor.png)
 
 One ambient pianissimo sample was incorrectly recorded (there is a silence essentially) and although I could use its round-robin counterpart, again, I wanted to keep things simple. Therefore a pitched neighbor is used as a replacement.
 
@@ -88,9 +101,13 @@ There is a bit of noise, apparently in the ambient samples. I added a bit of fad
 
 ## Background
 
+![Smart Controls](Screenshots/Sample%20Editor%20Start.png)
+
 You maybe wonder why I created a Logic Sampler instrument while Piano in 162 is available for Kontakt and also via free and open SFZ instrument format. Well, after Apple introduced their first M1 models of laptops and Macs, there were no SFZ instrument plugins in native format. Although Rosetta is working fine, I wanted the best possible performance.
 
 Another reason was to try out the new Logic Sampler because workflow was vastly improved. And I have to say it is a wonderful experience and in my experience, it is the best sampler I have ever worked with. I also own Reason with its, ehm, NN19 and NN-XT, tried EXS24, Renoise and few others. Logic Sampler has a ton of capabilities, it recognizes root notes from filenames or, which was particularly useful for this instrument, keeps filename ordering when samples are dragged into the map screen. Also sample audition via arrow keys was fast, snap to transition/0dB as well as fade-in, fade-out and group operations on zones and groups was very useful.
+
+![Smart Controls](Screenshots/Sample%20Editor%20End.png)
 
 So there you have it, enjoy this piano.
 
