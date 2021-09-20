@@ -139,6 +139,12 @@ Huge thanks to Simon Dalzell for the sample library.
 
 I am looking for any kind of feedback or contributions, just create [a discussion](https://github.com/lzap/Piano162Logic/discussions) topic. When reporting problems, include your MacOS version, make a screenshot or copy and paste the error from the terminal.
 
+## License
+
+The patches for Logic Pro are public domain, feel free to do anything you want. If you do some decent improvements, send patches back over to me. Make sure to describe what you did so I can test it.
+
+Sample contant is copyrighted by Simon Dalzell (Ivy Audio). Head over to the site for more information.
+
 ## Tips and credits
 
 * Simon Dalzell - Piano in 162 sample content: [tips or donations](https://sites.fastspring.com/ivyaudio/instant/piano-in-162)
