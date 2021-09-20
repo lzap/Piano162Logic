@@ -1,6 +1,10 @@
 # Piano in 162 for Logic Sampler
 
-![Smart Controls](Screenshots/Smart%20Controls.png)
+Welcome on the Piano in 162 patches for Logic Pro X: https://lukas.zapletalovi.com/Piano162Logic/
+
+<p align="center">
+  <a href="Screenshots/Smart%20Controls.png"><img src="Screenshots/Smart%20Controls.png" width="400" /></a>
+</p>
 
 This repository contains Logic Sampler (also known as EXS24) instrument patch for the excellent [Piano in 162](https://ivyaudio.com/Piano-in-162) sample library (14 GB). There are also several channel strip patches available with smart controls for microphone mix and quick access to key effects like compressor or key response.
 
@@ -105,7 +109,7 @@ There is a bit of noise, apparently in the ambient samples. I added a bit of fad
 
 You maybe wonder why I created a Logic Sampler instrument while Piano in 162 is available for Kontakt and also via free and open SFZ instrument format. Well, after Apple introduced their first M1 models of laptops and Macs, there were no SFZ instrument plugins in native format. Although Rosetta is working fine, I wanted the best possible performance.
 
-Another reason was to try out the new Logic Sampler because workflow was vastly improved. And I have to say it is a wonderful experience and in my experience, it is the best sampler I have ever worked with. I also own Reason with its, ehm, NN19 and NN-XT, tried EXS24, Renoise and few others. Logic Sampler has a ton of capabilities, it recognizes root notes from filenames or, which was particularly useful for this instrument, keeps filename ordering when samples are dragged into the map screen. Also sample audition via arrow keys was fast, snap to transition/0dB as well as fade-in, fade-out and group operations on zones and groups was very useful.
+Another reason was to try out the new Logic Sampler because I simply wanted to check it out, its workflow has been vastly improved. And I have to say it is a wonderful experience and in my opinion, it is the best all-round multi sampler I have ever worked with. I also own Reason with its, ehm, NN19 and NN-XT, tried EXS24, Renoise and few others. Logic Sampler has a ton of capabilities, it recognizes root notes from filenames or, which was particularly useful for this instrument, keeps filename ordering when samples are dragged into the map screen. Also sample audition via arrow keys was fast, snap to transition/0dB as well as fade-in, fade-out and group operations on zones and groups was very useful.
 
 ![Smart Controls](Screenshots/Sample%20Editor%20End.png)
 
