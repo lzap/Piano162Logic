@@ -8,7 +8,9 @@ Welcome on the Piano in 162 patches for Logic Pro X: https://lukas.zapletalovi.c
 
 This repository contains Logic Sampler (also known as EXS24) instrument patch for the excellent [Piano in 162](https://ivyaudio.com/Piano-in-162) sample library (14 GB). There are also several channel strip patches available with smart controls for microphone mix and quick access to key effects like compressor or key response.
 
-![Smart Controls](Screenshots/Strip%20Settings.png)
+<p align="center">
+  <img src="Screenshots/Strip%20Settings.png" width="400" />
+</p>
 
 Brief overview of what is available:
 
@@ -28,7 +30,9 @@ Brief overview of what is available:
   * _FX - Key response_: velocity processor gain and ratio for light touch, leftmost position for natural response.
   * _FX - High_: channel equalizer high frequency control.
 
-![Smart Controls](Screenshots/Editor%20Detail.png)
+<p align="center">
+  <a href="Screenshots/"Editor%20Detail.png><img src="Screenshots/Editor%20Detail.png" width="400" /></a>
+</p>
 
 When loading Logic Sampler patch directly, make sure to open up "Sampler (multi-out)" and not just "Sampler (stereo)". This is a two channel instrument:
 
@@ -38,7 +42,9 @@ When loading Logic Sampler patch directly, make sure to open up "Sampler (multi-
 
 To work with both channels separately on the Logic mixer, click on the plus icon to expand channels 3-4 and 5-6. Normally, Smart Controls should do tho.
 
-![Smart Controls](Screenshots/Mixer%20Expanded.png)
+<p align="center">
+  <a href="Screenshots/Mixer%20Expanded.png"><img src="Screenshots/Mixer%20Expanded.png" height="200" /></a>
+</p>
 
 No conversion tool was used to create this instrument, it was all made from sctratch manually note by note. Start and end of each sample was audited multiple times, volume was manually modified for the best possible experience and few problems fixed. This was all done in my free time, I am not a professional sound designer.
 
@@ -95,7 +101,9 @@ Logic Sampler is limited to polyphony of 99 voices and since each note triggers 
 
 The sample content library comes with round-robins for each individual sample and Logic Sampler is capable of round-robin sampling. However, for practical reasons I ended up using just samples named with "1". Double the samples, double the work on getting a good sound from them.
 
-![Smart Controls](Screenshots/Zone%20Editor.png)
+<p align="center">
+  <a href="Screenshots/Zone%20Editor.png"><img src="Screenshots/Zone%20Editor.png" width="400" /></a>
+</p>
 
 One ambient pianissimo sample was incorrectly recorded (there is a silence essentially) and although I could use its round-robin counterpart, again, I wanted to keep things simple. Therefore a pitched neighbor is used as a replacement.
 
@@ -105,13 +113,17 @@ There is a bit of noise, apparently in the ambient samples. I added a bit of fad
 
 ## Background
 
-![Smart Controls](Screenshots/Sample%20Editor%20Start.png)
+<p align="center">
+  <a href="Screenshots/Sample%20Editor%20Start.png"><img src="Screenshots/Sample%20Editor%20Start.png" width="400" /></a>
+</p>
 
 You maybe wonder why I created a Logic Sampler instrument while Piano in 162 is available for Kontakt and also via free and open SFZ instrument format. Well, after Apple introduced their first M1 models of laptops and Macs, there were no SFZ instrument plugins in native format. Although Rosetta is working fine, I wanted the best possible performance.
 
 Another reason was to try out the new Logic Sampler because I simply wanted to check it out, its workflow has been vastly improved. And I have to say it is a wonderful experience and in my opinion, it is the best all-round multi sampler I have ever worked with. I also own Reason with its, ehm, NN19 and NN-XT, tried EXS24, Renoise and few others. Logic Sampler has a ton of capabilities, it recognizes root notes from filenames or, which was particularly useful for this instrument, keeps filename ordering when samples are dragged into the map screen. Also sample audition via arrow keys was fast, snap to transition/0dB as well as fade-in, fade-out and group operations on zones and groups was very useful.
 
-![Smart Controls](Screenshots/Sample%20Editor%20End.png)
+<p align="center">
+  <a href="Screenshots/Sample%20Editor%20End.png"><img src="Screenshots/Sample%20Editor%20End.png" width="400" /></a>
+</p>
 
 So there you have it, enjoy this piano.
 
